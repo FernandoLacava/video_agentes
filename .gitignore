@@ -1,0 +1,10 @@
+# private source material (internal content) — never commit
+qg-central-material/
+source/
+# build intermediates
+video/out/_picture_*.mp4
+video/out/mix*.wav
+video/out/cues.json
+video/out/draft*
+video/out/contact_*
+video/snapshots/

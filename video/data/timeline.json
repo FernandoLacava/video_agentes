@@ -1,0 +1,1352 @@
+{
+ "meta": {
+  "title": "Uma quinta-feira inteira com o meu time de agentes",
+  "date": "qui 08/10",
+  "duration": 63.9,
+  "fps": 30,
+  "privacy": "Conteúdo interno do estágio já sanitizado: nomes de pessoas trocados por papéis, sem URLs, sem códigos internos, comanda e prompts substituídos por esqueleto/placeholder ilegível. Os originais ficam só em ../source (não versionado)."
+ },
+ "agents": {
+  "escudeiro": {
+   "name": "Escudeiro do Dia a Dia",
+   "short": "ESCUDEIRO",
+   "role": "notícias",
+   "color": "#72b8d0",
+   "avatar": "assets/avatars/escudeiro.png"
+  },
+  "mago": {
+   "name": "Mago dos Estudos",
+   "short": "MAGO",
+   "role": "faculdade",
+   "color": "#7ebefd",
+   "avatar": "assets/avatars/mago.png"
+  },
+  "guerreiro": {
+   "name": "Guerreiro do Trabalho",
+   "short": "GUERREIRO",
+   "role": "estágio",
+   "color": "#bc93fe",
+   "avatar": "assets/avatars/guerreiro.png"
+  },
+  "mestre": {
+   "name": "Mestre das Rotas",
+   "short": "MESTRE",
+   "role": "roteador",
+   "color": "#f2c94c",
+   "avatar": "assets/avatars/mestre.png"
+  }
+ },
+ "hook": {
+  "title": "Uma quinta-feira inteira, tocada por 4 agentes de IA que eu criei.",
+  "select": [
+   {
+    "agent": "escudeiro",
+    "at": 0.15
+   },
+   {
+    "agent": "mago",
+    "at": 0.45
+   },
+   {
+    "agent": "guerreiro",
+    "at": 0.75
+   },
+   {
+    "agent": "mestre",
+    "at": 1.05
+   }
+  ],
+  "out": 2.65
+ },
+ "locks": [
+  {
+   "id": "01",
+   "img": "assets/prints/lock_01.jpg",
+   "in": 0.0,
+   "dive": 2.85,
+   "rect": [
+    41,
+    2121,
+    1278,
+    2443
+   ],
+   "batt": 82,
+   "time": "07:01"
+  },
+  {
+   "id": "04",
+   "img": "assets/prints/lock_04.jpg",
+   "base": "assets/prints/lockbase_04.jpg",
+   "card": "assets/prints/card_04.png",
+   "in": 7.5,
+   "cardAt": 7.8,
+   "dive": 8.55,
+   "rect": [
+    41,
+    2134,
+    1278,
+    2459
+   ],
+   "batt": 73,
+   "time": "08:30"
+  },
+  {
+   "id": "06",
+   "img": "assets/prints/lock_06.jpg",
+   "base": "assets/prints/lockbase_06.jpg",
+   "card": "assets/prints/card_06.png",
+   "in": 10.4,
+   "cardAt": 10.6,
+   "dive": 11.05,
+   "rect": [
+    41,
+    2064,
+    1278,
+    2388
+   ],
+   "batt": 59,
+   "time": "10:30"
+  },
+  {
+   "id": "08",
+   "img": "assets/prints/lock_08.jpg",
+   "base": "assets/prints/lockbase_08.jpg",
+   "card": "assets/prints/card_08.png",
+   "in": 12.7,
+   "cardAt": 13.0,
+   "dive": 13.5,
+   "rect": [
+    41,
+    2126,
+    1278,
+    2454
+   ],
+   "batt": 49,
+   "time": "12:00"
+  },
+  {
+   "id": "16",
+   "img": "assets/prints/lock_16.jpg",
+   "base": "assets/prints/lockbase_16.jpg",
+   "card": "assets/prints/card_16.png",
+   "in": 49.2,
+   "cardAt": 49.4,
+   "dive": 49.9,
+   "rect": [
+    41,
+    1931,
+    1278,
+    2259
+   ],
+   "batt": 20,
+   "time": "19:00"
+  },
+  {
+   "id": "17",
+   "img": "assets/prints/lock_17.jpg",
+   "base": "assets/prints/lockbase_17.jpg",
+   "card": "assets/prints/card_17.png",
+   "in": 51.9,
+   "cardAt": 52.1,
+   "dive": 52.6,
+   "rect": [
+    41,
+    2051,
+    1278,
+    2376
+   ],
+   "batt": 12,
+   "time": "19:30"
+  }
+ ],
+ "clocks": [
+  {
+   "at": 15.5,
+   "from": "12:00",
+   "to": "12:05"
+  },
+  {
+   "at": 18.8,
+   "from": "12:05",
+   "to": "14:24"
+  },
+  {
+   "at": 30.8,
+   "from": "14:25",
+   "to": "17:00"
+  },
+  {
+   "at": 34.4,
+   "from": "17:00",
+   "to": "17:55"
+  },
+  {
+   "at": 44.2,
+   "from": "17:56",
+   "to": "18:36"
+  }
+ ],
+ "status": [
+  {
+   "at": 0,
+   "time": "07:01",
+   "batt": 82
+  },
+  {
+   "at": 8.5,
+   "time": "08:30",
+   "batt": 73
+  },
+  {
+   "at": 11.0,
+   "time": "10:30",
+   "batt": 59
+  },
+  {
+   "at": 13.45,
+   "time": "12:00",
+   "batt": 49
+  },
+  {
+   "at": 15.7,
+   "time": "12:05",
+   "batt": 49
+  },
+  {
+   "at": 19.0,
+   "time": "14:24",
+   "batt": 38
+  },
+  {
+   "at": 22.1,
+   "time": "14:25",
+   "batt": 38
+  },
+  {
+   "at": 31.0,
+   "time": "17:00",
+   "batt": 23
+  },
+  {
+   "at": 34.6,
+   "time": "17:55",
+   "batt": 14
+  },
+  {
+   "at": 35.7,
+   "time": "17:56",
+   "batt": 14
+  },
+  {
+   "at": 44.4,
+   "time": "18:36",
+   "batt": 12
+  },
+  {
+   "at": 49.85,
+   "time": "19:00",
+   "batt": 20
+  },
+  {
+   "at": 52.55,
+   "time": "19:30",
+   "batt": 12
+  }
+ ],
+ "captions": [
+  {
+   "at": 2.95,
+   "time": "07:00",
+   "text": "As notícias que eu quero, sem eu pedir."
+  },
+  {
+   "at": 7.5,
+   "time": "08:30",
+   "text": "Ele confere o Moodle por mim."
+  },
+  {
+   "at": 10.4,
+   "time": "10:30",
+   "text": "Duas vezes."
+  },
+  {
+   "at": 12.7,
+   "time": "12:00",
+   "text": "Ele cobra a comanda do estágio."
+  },
+  {
+   "at": 15.72,
+   "time": "12:05",
+   "text": "E lembra o que ficou aberto ontem."
+  },
+  {
+   "at": 19.02,
+   "time": "14:24",
+   "text": "Colo a comanda do jeito que chegou…"
+  },
+  {
+   "at": 20.1,
+   "time": "14:24",
+   "text": "O roteador lê e chama o Guerreiro."
+  },
+  {
+   "at": 22.6,
+   "time": "14:25",
+   "text": "Em segundos: resumo, tarefas e o prompt pronto pro GPT."
+  },
+  {
+   "at": 31.02,
+   "time": "17:00",
+   "text": "Ele cobra o que ficou aberto."
+  },
+  {
+   "at": 34.62,
+   "time": "17:55",
+   "text": "Mando o relatório do dia."
+  },
+  {
+   "at": 36.9,
+   "time": "17:56",
+   "text": "Ele confere o meu relatório. E pega até o meu erro de digitação."
+  },
+  {
+   "at": 44.42,
+   "time": "18:36",
+   "text": "Dia de trabalho fechado."
+  },
+  {
+   "at": 49.2,
+   "time": "19:00",
+   "text": "E as notícias da noite."
+  },
+  {
+   "at": 51.9,
+   "time": "19:30",
+   "text": "E o dia fecha com o relatório da faculdade."
+  },
+  {
+   "at": 55.0,
+   "time": null,
+   "text": "4 agentes. 1 grupo. Memória compartilhada."
+  }
+ ],
+ "quests": {
+  "items": [
+   {
+    "id": 5,
+    "label": "Assessment testado"
+   },
+   {
+    "id": 6,
+    "label": "Cadastro via QR"
+   },
+   {
+    "id": 7,
+    "label": "Observar o piloto"
+   },
+   {
+    "id": 8,
+    "label": "Debrief do piloto"
+   },
+   {
+    "id": 10,
+    "label": "Meus aprendizados"
+   }
+  ],
+  "events": [
+   {
+    "at": 17.5,
+    "op": "show"
+   },
+   {
+    "at": 17.65,
+    "op": "set",
+    "id": 5,
+    "state": "open"
+   },
+   {
+    "at": 17.75,
+    "op": "set",
+    "id": 6,
+    "state": "open"
+   },
+   {
+    "at": 17.85,
+    "op": "set",
+    "id": 7,
+    "state": "open"
+   },
+   {
+    "at": 17.95,
+    "op": "set",
+    "id": 8,
+    "state": "open"
+   },
+   {
+    "at": 19.65,
+    "op": "hide"
+   },
+   {
+    "at": 22.45,
+    "op": "show"
+   },
+   {
+    "at": 27.05,
+    "op": "set",
+    "id": 10,
+    "state": "new"
+   },
+   {
+    "at": 32.0,
+    "op": "blink",
+    "until": 33.5
+   },
+   {
+    "at": 34.6,
+    "op": "hide"
+   },
+   {
+    "at": 43.75,
+    "op": "show"
+   },
+   {
+    "at": 46.4,
+    "op": "set",
+    "id": 10,
+    "state": "done"
+   },
+   {
+    "at": 46.7,
+    "op": "set",
+    "id": 5,
+    "state": "cancel"
+   },
+   {
+    "at": 46.85,
+    "op": "set",
+    "id": 6,
+    "state": "cancel"
+   },
+   {
+    "at": 47.0,
+    "op": "set",
+    "id": 7,
+    "state": "cancel"
+   },
+   {
+    "at": 47.15,
+    "op": "set",
+    "id": 8,
+    "state": "cancel"
+   },
+   {
+    "at": 47.5,
+    "op": "clear",
+    "text": "Nada aberto no trabalho"
+   },
+   {
+    "at": 48.8,
+    "op": "hide"
+   }
+  ]
+ },
+ "routing": {
+  "at": 19.75,
+  "until": 22.35
+ },
+ "phoneStates": [
+  {
+   "at": 0,
+   "state": "lock",
+   "dur": 0
+  },
+  {
+   "at": 2.85,
+   "state": "chat",
+   "dur": 0.45
+  },
+  {
+   "at": 7.5,
+   "state": "lock",
+   "dur": 0.4
+  },
+  {
+   "at": 8.55,
+   "state": "chat",
+   "dur": 0.45
+  },
+  {
+   "at": 10.4,
+   "state": "lock",
+   "dur": 0.35
+  },
+  {
+   "at": 11.05,
+   "state": "chat",
+   "dur": 0.4
+  },
+  {
+   "at": 12.7,
+   "state": "lock",
+   "dur": 0.35
+  },
+  {
+   "at": 13.5,
+   "state": "chat",
+   "dur": 0.45
+  },
+  {
+   "at": 17.4,
+   "state": "panel",
+   "dur": 0.5
+  },
+  {
+   "at": 34.6,
+   "state": "chat",
+   "dur": 0.35
+  },
+  {
+   "at": 43.75,
+   "state": "panel",
+   "dur": 0.4
+  },
+  {
+   "at": 48.8,
+   "state": "chat",
+   "dur": 0.4
+  },
+  {
+   "at": 49.2,
+   "state": "lock",
+   "dur": 0.35
+  },
+  {
+   "at": 49.9,
+   "state": "chat",
+   "dur": 0.4
+  },
+  {
+   "at": 51.9,
+   "state": "lock",
+   "dur": 0.35
+  },
+  {
+   "at": 52.6,
+   "state": "chat",
+   "dur": 0.4
+  },
+  {
+   "at": 55.0,
+   "state": "proof",
+   "dur": 0.4
+  },
+  {
+   "at": 59.4,
+   "state": "out",
+   "dur": 0.55
+  }
+ ],
+ "punches": [
+  {
+   "from": 3.5,
+   "to": 4.6,
+   "scale": 1.12,
+   "focus": 0.42
+  },
+  {
+   "from": 5.35,
+   "to": 6.6,
+   "scale": 1.12,
+   "focus": 0.42
+  },
+  {
+   "from": 23.0,
+   "to": 26.8,
+   "scale": 1.07,
+   "focus": 0.86,
+   "fx": 1.0
+  },
+  {
+   "from": 31.8,
+   "to": 33.6,
+   "scale": 1.08,
+   "focus": 0.8,
+   "fx": 1.0
+  },
+  {
+   "from": 34.95,
+   "to": 36.3,
+   "scale": 1.55,
+   "focus": 0.75,
+   "fx": 0.536
+  },
+  {
+   "from": 37.8,
+   "to": 40.1,
+   "scale": 1.1,
+   "focus": 0.86,
+   "fx": 1.0
+  },
+  {
+   "from": 41.2,
+   "to": 43.75,
+   "scale": 1.42,
+   "focus": 0.8,
+   "fx": 0.51
+  },
+  {
+   "from": 45.6,
+   "to": 47.4,
+   "scale": 1.1,
+   "focus": 0.86,
+   "fx": 1.0
+  },
+  {
+   "from": 50.4,
+   "to": 51.6,
+   "scale": 1.1,
+   "focus": 0.42
+  }
+ ],
+ "proof": {
+  "at": 55.0,
+  "home": {
+   "img": "assets/video/home_012.jpg",
+   "until": 55.42
+  },
+  "frames": "assets/video/info_%03d.jpg",
+  "seq": [
+   {
+    "at": 55.42,
+    "from": 1,
+    "to": 10,
+    "dur": 0.33
+   },
+   {
+    "at": 55.75,
+    "from": 20,
+    "to": 20,
+    "dur": 2.05
+   },
+   {
+    "at": 57.8,
+    "from": 40,
+    "to": 49,
+    "dur": 0.5
+   }
+  ],
+  "labels": [
+   {
+    "text": "eu",
+    "color": "#ffffff",
+    "y": 1067,
+    "at": 55.85
+   },
+   {
+    "agent": "mago",
+    "y": 1210,
+    "at": 56.0
+   },
+   {
+    "agent": "mestre",
+    "y": 1352,
+    "at": 56.18
+   },
+   {
+    "agent": "guerreiro",
+    "y": 1495,
+    "at": 56.36
+   },
+   {
+    "agent": "escudeiro",
+    "y": 1637,
+    "at": 56.54
+   }
+  ],
+  "labelsOut": 57.75,
+  "statusCover": {
+   "time": "19:30",
+   "batt": 12
+  },
+  "grid": {
+   "at": 58.349999999999994,
+   "items": [
+    {
+     "agent": "mestre",
+     "x": 270,
+     "y": 560
+    },
+    {
+     "agent": "escudeiro",
+     "x": 800,
+     "y": 560
+    },
+    {
+     "agent": "mago",
+     "x": 270,
+     "y": 1040
+    },
+    {
+     "agent": "guerreiro",
+     "x": 800,
+     "y": 1040
+    }
+   ]
+  }
+ },
+ "end": {
+  "at": 59.4,
+  "stack": [
+   "API da Anthropic",
+   "Supabase",
+   "Vercel",
+   "Telegram"
+  ],
+  "cta": "Quer saber como eu montei? Comenta aqui.",
+  "stackAt": 60.3,
+  "ctaAt": 60.9
+ },
+ "messages": [
+  {
+   "id": "ai07",
+   "from": "escudeiro",
+   "time": "07:00",
+   "at": 3.3,
+   "avatar": false,
+   "dateChip": "Today",
+   "lines": [
+    "**AI e Tecnologia** · qui 08/10",
+    "",
+    "**==1. Microsoft coloca Copilot e IA até na barra de busca do Windows==**",
+    "Nova interface permite alterar configurações, enviar mensagens e conversar com o Copilot sem abrir outros aplicativos do Windows 11. Microsoft coloca Copilot e IA até na barra de busca do Windows",
+    ">tecnoblog.net",
+    "",
+    "**==2. Nous Research confirms it hit $1.5B valuation, launches AI agents for business users==**",
+    "The developer of Hermes Agent raised a $90 million Series B.",
+    ">techcrunch.com",
+    "",
+    "**3. Galaxy Book 4 tem melhor preço com cupom do TB no Magazine Luiza**",
+    "Modelo NP750XGJ-KG3BR traz processador Intel Core i5, SSD de 512GB e tela de 15,6\". Pague no Pix e utilize o cupom TECNOBLOG300 para pagar mais barato no notebook da Samsung Galaxy Book 4 tem melhor preço com cupom do TB no Magazine Luiza",
+    ">tecnoblog.net",
+    "",
+    "**4. Microsoft releases new Nvidia-chip AI PCs with revamped Windows 11**",
+    "Microsoft revealed the specs and price for its Surface Laptop Ultra, AI PCs that run on Nvidia chips that are designed to run AI models and agents.",
+    ">techcrunch.com",
+    "",
+    "**5. LibreOffice reforça que “ausência de IA” é um diferencial**",
+    "The Document Foundation não é contra a IA em si, mas diz que a sua adoção tem que ser criteriosa. LibreOffice reforça que “ausência de IA” é um diferencial",
+    ">tecnoblog.net"
+   ],
+   "reveal": [
+    [
+     2,
+     3.3
+    ],
+    [
+     8,
+     3.6
+    ],
+    [
+     20,
+     3.9
+    ]
+   ],
+   "marks": [
+    3.55,
+    4.25
+   ],
+   "scroll": [
+    {
+     "at": 3.3,
+     "line": 0,
+     "align": 0.2,
+     "dur": 0.25
+    },
+    {
+     "at": 3.95,
+     "line": 6,
+     "align": 0.42,
+     "dur": 0.4
+    },
+    {
+     "at": 4.55,
+     "line": 20,
+     "align": 0.98,
+     "dur": 0.5
+    }
+   ]
+  },
+  {
+   "id": "cor07",
+   "from": "escudeiro",
+   "time": "07:00",
+   "typing": 4.85,
+   "at": 5.15,
+   "showName": false,
+   "lines": [
+    "**Corinthians** · qui 08/10",
+    "",
+    "**==1. Análise: Diniz morre abraçado às próprias convicções no Corinthians==**",
+    "Fernando Diniz deixa o Corinthians após não conseguir reagir à queda de rendimento da equipe depois da Copa do Mundo. Demitido após a sétima derrota consecutiva no Brasileirão, o treinador é criticado pela insistência em convicções que já não davam resultado, simbolizadas principalmente pela manutenção de Rodrigo Garr…",
+    ">gazetaesportiva.com",
+    "",
+    "**2. Atuações do Corinthians: dupla se salva e Garro é o vilão contra o Inter**",
+    "O Corinthians voltou a decepcionar ao perder para o Internacional por 2 a 1 no Beira-Rio e chegou à sétima derrota consecutiva no Brasileirão. Entre os poucos destaques positivos estiveram Yuri Alberto, que retornou de lesão e deu mais mobilidade ao ataque, e André, autor do gol alvinegro. Já Rodrigo Garro teve atuaçã…",
+    ">gazetaesportiva.com",
+    "",
+    "**==3. Ramón Díaz é o favorito para substituir Diniz no Corinthians==**",
+    "O Corinthians iniciou a busca por um novo treinador após a demissão de Fernando Diniz. Ramón Díaz desponta como principal candidato por conhecer o clube, estar livre no mercado e já ter conduzido uma reação da equipe em 2024. Além do argentino, Juan Pablo Vojvoda e Sylvinho também são debatidos internamente, enquanto…",
+    ">gazetaesportiva.com",
+    "",
+    "**4. Meia-atacante volta a ganhar minutos pelo Corinthians após mais de cinco meses**",
+    "Na noite desta quarta-feira (7), o Corinthians encarou o Internacional, no Estádio Beira-Rio, em partida válida pela 29ª rodada do Campeonato Brasileiro de 2026, e acabou perdendo por 2 x 1. O gol do Alvinegro foi marcado pelo volante André Luiz, na segunda etapa. Com o resultado, o Timão caiu da 14ª para a 16ª […]",
+    ">centraldotimao.com.br",
+    "",
+    "**5. Saiba situação do Corinthians no Brasileirão após derrota fora de casa contra o Internacional**",
+    "O Corinthians encarou, na noite desta quarta-feira (7), o Internacional, no Estádio Beira-Rio, Rio Grande do Sul, em partida válida pela 29ª rodada do Campeonato Brasileiro de 2026, e foi superado pelo placar de 2 x 1. O tento do Alvinegro foi anotado pelo volante André Luiz, na segunda etapa. O novo revés fez com […]",
+    ">centraldotimao.com.br"
+   ],
+   "marks": [
+    5.4,
+    6.15
+   ],
+   "scroll": [
+    {
+     "at": 5.15,
+     "line": 0,
+     "align": 0.2,
+     "dur": 0.35
+    },
+    {
+     "at": 5.8,
+     "line": 10,
+     "align": 0.36,
+     "dur": 0.4
+    },
+    {
+     "at": 6.55,
+     "line": 20,
+     "align": 0.98,
+     "dur": 0.75
+    }
+   ]
+  },
+  {
+   "id": "mago0830",
+   "from": "mago",
+   "time": "08:30",
+   "typing": 8.95,
+   "at": 9.4,
+   "lines": [
+    "**Conferência do Moodle** · qui 08/10 08:30",
+    "",
+    "==Nada para entregar até o meio-dia.==",
+    "",
+    "**Próxima entrega**",
+    "• sex 09/10 23:59 · CRM na prática: da informação à decisão //(Sistemas Integrados de Gestão)//",
+    "",
+    "**Novidade no Moodle**",
+    "• sex 09/10 23:59 · CRM na prática: da informação à decisão //(Sistemas Integrados de Gestão)//"
+   ],
+   "marks": [
+    9.7
+   ]
+  },
+  {
+   "id": "mago1030",
+   "from": "mago",
+   "time": "10:30",
+   "typing": 11.4,
+   "at": 11.8,
+   "divider": "Unread Messages",
+   "lines": [
+    "**Conferência do Moodle** · qui 08/10 10:30",
+    "",
+    "==Nada para entregar até o meio-dia.==",
+    "",
+    "**Próxima entrega**",
+    "• sex 09/10 23:59 · CRM na prática: da informação à decisão //(Sistemas Integrados de Gestão)//"
+   ],
+   "marks": [
+    12.05
+   ]
+  },
+  {
+   "id": "g1200",
+   "from": "guerreiro",
+   "time": "12:00",
+   "typing": 13.9,
+   "at": 14.4,
+   "divider": "Unread Messages",
+   "lines": [
+    "**==Comanda do dia==** · qui 08/10",
+    "Me mande o documento da comanda de hoje (link, PDF, Word, print ou texto colado), respondendo esta mensagem.",
+    "Tem mensagens do seu chefe complementando? Encaminhe também.",
+    "Com isso eu te devolvo o resumo da sua parte e um prompt pronto para o GPT.",
+    "Se não teve comanda, responda: nada hoje."
+   ],
+   "marks": [
+    14.65
+   ]
+  },
+  {
+   "id": "me1205",
+   "from": "me",
+   "time": "12:05",
+   "at": 15.95,
+   "lines": [
+    "Ainda não recebi nada, quando receber te encaminho"
+   ]
+  },
+  {
+   "id": "g1205",
+   "from": "guerreiro",
+   "time": "12:05",
+   "typing": 16.35,
+   "at": 16.95,
+   "lines": [
+    "Fechado, Fernando. Fico no aguardo. Quando a comanda do Dia 4 chegar, encaminhe aqui junto com as mensagens do seu chefe, se houver. Aí eu monto o resumo da sua parte e o prompt do GPT.",
+    "",
+    "Ontem ficaram abertas as tarefas ==#5, #6, #7 e #8==. Se der, me diga quais você concluiu, para eu atualizar a lista."
+   ],
+   "reveal": [
+    [
+     1,
+     16.95
+    ],
+    [
+     2,
+     17.35
+    ]
+   ],
+   "marks": [
+    17.5
+   ]
+  },
+  {
+   "id": "me1424",
+   "from": "me",
+   "time": "14:24",
+   "at": 19.2,
+   "big": true,
+   "lines": [
+    "Pessoal, coloquei a comanda de hoje no material…",
+    "!sk:2",
+    "",
+    "!sk:6",
+    "",
+    "!sk:4",
+    "",
+    "!sk:4"
+   ],
+   "reveal": [
+    [
+     1,
+     19.2
+    ],
+    [
+     3,
+     19.5
+    ],
+    [
+     5,
+     19.8
+    ],
+    [
+     7,
+     20.1
+    ]
+   ]
+  },
+  {
+   "id": "g1425",
+   "from": "guerreiro",
+   "time": "14:25",
+   "typing": 22.0,
+   "at": 22.6,
+   "lines": [
+    "Fernando, recebi a comanda do Dia 4 e a mensagem do seu chefe. Segue o resumo.",
+    "",
+    "## 1. Do que se trata",
+    "Revisão do primeiro evento e preparação do próximo. A missão é transformar o que aconteceu ontem em decisões, correções e um plano melhor.",
+    "",
+    "## 2. Contexto",
+    "- Quem pediu: seu chefe. Ele lê tudo no fim do dia e conversa com o time na sexta.",
+    "- Leitura de ontem: a experiência foi validada; a operação ainda precisa de ajustes.",
+    "- Regra do dia: todo problema vira decisão, correção, responsável ou backlog.",
+    "",
+    "## 3. Sua parte",
+    "- Explícito: registrar seus aprendizados individuais (o que você viu, o que funcionou, o que falhou, o que mudaria).",
+    "- Dedução pelo seu papel: três frentes ligadas ao que você registrou ontem. Me diga se são suas e eu crio as tarefas.",
+    "",
+    "## 4. O que o resto do time faz",
+    "- Operação e recepção, aplicação e dados, revisão da experiência e comunicação: cada frente com um responsável.",
+    "",
+    "## 5. Prazos e urgência",
+    "- Documento final: até o fim de hoje.",
+    "- Ainda abertas de ontem: #5, #6 e #7 já passaram do prazo; a #8 está sem prazo.",
+    "",
+    "## 6. O que vale confirmar com o seu chefe",
+    "- A data do próximo evento e a hora limite para entregar o documento.",
+    "",
+    "Criei a tarefa ==#10== (aprendizados individuais, hoje às 23h59) e registrei o foco do dia na memória."
+   ],
+   "reveal": [
+    [
+     1,
+     22.6
+    ],
+    [
+     4,
+     23.1
+    ],
+    [
+     9,
+     23.75
+    ],
+    [
+     13,
+     24.4
+    ],
+    [
+     16,
+     25.05
+    ],
+    [
+     20,
+     25.7
+    ],
+    [
+     23,
+     26.35
+    ],
+    [
+     24,
+     27.0
+    ]
+   ],
+   "marks": [
+    23.2,
+    23.85,
+    24.5,
+    25.15,
+    25.8,
+    26.45,
+    27.15
+   ],
+   "avatar": false
+  },
+  {
+   "id": "p1",
+   "from": "guerreiro",
+   "time": "14:25",
+   "typing": 27.8,
+   "at": 28.25,
+   "showName": false,
+   "avatar": false,
+   "lines": [
+    "**==Prompt para o GPT (parte 1 de 2)==** · toque no bloco para copiar",
+    "!code:22"
+   ],
+   "reveal": [
+    [
+     1,
+     28.25
+    ]
+   ],
+   "marks": [
+    28.4
+   ]
+  },
+  {
+   "id": "p2",
+   "from": "guerreiro",
+   "time": "14:25",
+   "typing": 29.15,
+   "at": 29.55,
+   "showName": false,
+   "lines": [
+    "**==Prompt para o GPT (parte 2 de 2)==** · toque no bloco para copiar",
+    "!code:18"
+   ],
+   "reveal": [
+    [
+     1,
+     29.55
+    ]
+   ],
+   "marks": [
+    29.7
+   ]
+  },
+  {
+   "id": "g1700",
+   "from": "guerreiro",
+   "time": "17:00",
+   "typing": 31.2,
+   "at": 31.7,
+   "divider": "Unread Messages",
+   "lines": [
+    "**==Conferência do dia==** · qui 08/10",
+    "Estas tarefas do trabalho ainda estão abertas:",
+    "• **#5** Confirmar o teste do Assessment · prazo qua 07/10 15:00",
+    "• **#7** Observar e anotar a experiência do piloto · prazo qua 07/10 18:00",
+    "• **#6** Garantir o cadastro completo no check-in · prazo qua 07/10 23:59",
+    "• **#10** Registrar meus aprendizados do primeiro evento · prazo qui 08/10 23:59",
+    "• **#8** Debrief objetivo do piloto",
+    "",
+    "Me mande o relatório do dia que o GPT gerou, respondendo esta mensagem. Eu confiro com as tarefas, marco o que foi feito e te digo o que ficou."
+   ],
+   "reveal": [
+    [
+     1,
+     31.7
+    ],
+    [
+     2,
+     32.0
+    ],
+    [
+     3,
+     32.25
+    ],
+    [
+     4,
+     32.5
+    ],
+    [
+     5,
+     32.75
+    ],
+    [
+     6,
+     33.0
+    ],
+    [
+     8,
+     33.3
+    ]
+   ],
+   "marks": [
+    31.85
+   ]
+  },
+  {
+   "id": "me1755",
+   "from": "me",
+   "time": "17:55",
+   "at": 34.8,
+   "file": {
+    "name": "Registro_Final_Fernando_08-10-2026.docx",
+    "size": "41,5 KB"
+   },
+   "lines": [
+    "==Sewgu=="
+   ],
+   "marks": [
+    35.25
+   ]
+  },
+  {
+   "id": "g1756",
+   "from": "guerreiro",
+   "time": "17:56",
+   "typing": 35.3,
+   "at": 37.0,
+   "lines": [
+    "Fernando, conferi o relatório com as tarefas e as frentes do prompt de hoje.",
+    "",
+    "Concluí a **#10** (aprendizados individuais). O relatório traz o que você viu, o que funcionou, o que falhou e as melhorias propostas.",
+    "",
+    "**==Status das cinco frentes do prompt==**, segundo o relatório:",
+    "- Frente 1: **==parcial==**. Falta cruzar alguns dados.",
+    "- Frente 2: **==parcial==**. O segundo envio não foi confirmado.",
+    "- Frente 3: **==parcial==**. Os posts ainda não começaram.",
+    "- Frente 4: **==feito==**, como contribuição sua.",
+    "- Frente 5: **==feito==**. A aprovação fica para depois.",
+    "",
+    "Continuam abertas, porque o relatório não as confirma: #5, #6, #7 e #8.",
+    "",
+    "Os pendentes ficam para amanhã? Se quiser, crio tarefas para eles. Me diga quais.",
+    "",
+    "==Também não entendi o \"Sewgu\" no fim da sua mensagem. Se era um pedido, mande de novo.=="
+   ],
+   "reveal": [
+    [
+     1,
+     37.0
+    ],
+    [
+     3,
+     37.4
+    ],
+    [
+     5,
+     37.8
+    ],
+    [
+     6,
+     38.15
+    ],
+    [
+     7,
+     38.5
+    ],
+    [
+     8,
+     38.85
+    ],
+    [
+     9,
+     39.2
+    ],
+    [
+     11,
+     39.55
+    ],
+    [
+     13,
+     40.0
+    ],
+    [
+     15,
+     40.4
+    ],
+    [
+     16,
+     41.15
+    ]
+   ],
+   "marks": [
+    37.85,
+    38.2,
+    38.55,
+    38.9,
+    39.25,
+    39.6,
+    41.55
+   ]
+  },
+  {
+   "id": "me1836",
+   "from": "me",
+   "time": "18:36",
+   "at": 44.6,
+   "lines": [
+    "Tudo enviado de acordo com a comanda"
+   ]
+  },
+  {
+   "id": "g1836",
+   "from": "guerreiro",
+   "time": "18:36",
+   "typing": 45.0,
+   "at": 45.6,
+   "lines": [
+    "Anotado, Fernando. Sua parte do dia está entregue e eu ==não tenho mais nada aberto no seu trabalho.==",
+    "",
+    "Conferi a lista: as tarefas #5, #6, #7 e #8 constam como canceladas, e a #10 está concluída. Amanhã eu volto na comanda do Dia 5, às 12h."
+   ],
+   "reveal": [
+    [
+     1,
+     45.6
+    ],
+    [
+     2,
+     46.05
+    ]
+   ],
+   "marks": [
+    45.8
+   ]
+  },
+  {
+   "id": "ai19",
+   "from": "escudeiro",
+   "time": "19:00",
+   "typing": 49.9,
+   "at": 50.25,
+   "divider": "Unread Messages",
+   "lines": [
+    "**AI e Tecnologia** · qui 08/10 · noite",
+    "",
+    "**==1. Anthropic lança verificações de segurança de IA gratuitas para projetos de código aberto==**",
+    "Anthropic oferece um novo serviço chamado OSS Scanner que fornece verificações de segurança periódicas e completas em projetos de código aberto sem custo, ajudando a identificar vulnerabilidades de segurança.",
+    ">theverge.com",
+    "",
+    "**==2. Google traz IA agentic ao Gemini, começando com empresas==**",
+    "Google está transformando Gemini em um agente de IA que consegue planejar, executar tarefas e trabalhar em aplicativos e sistemas de negócios, com capacidade de delegar trabalho para subagentes e usar múltiplos modelos de IA.",
+    ">techcrunch.com",
+    "",
+    "**3. Leaderboard popular de IA Arena quase dobra avaliação para US$ 3,1 bilhões em 10 meses**",
+    "A empresa por trás do leaderboard LMArena levantou US$ 200 milhões liderados por Lightspeed e Khosla, e agora está avaliando modelos de IA em questões de alinhamento, como detecção de mentiras.",
+    ">techcrunch.com",
+    "",
+    "**4. Pesquisadores de segurança demitidos da OpenAI contestam acusações de má conduta e alertam sobre efeito paralisante**",
+    "Três pesquisadores de segurança demitidos da OpenAI contestam alegações de má manipulação de informações sensíveis em carta aberta, advertindo que seus desligamentos estão criando um efeito paralisante na cultura de segurança de IA da empresa.",
+    ">techcrunch.com",
+    "",
+    "**5. Anthropic altera política de uso para proibir abuso de modelo e interferência eleitoral**",
+    "A política de uso atualizada da Anthropic proíbe explicitamente usuários de abusar repetidamente do Claude em casos extremos, enquanto aborda também interferência eleitoral, campanhas enganosas, software de armas e vigilância.",
+    ">techcrunch.com"
+   ],
+   "marks": [
+    50.5,
+    51.2
+   ],
+   "scroll": [
+    {
+     "at": 50.25,
+     "line": 0,
+     "align": 0.2,
+     "dur": 0.3
+    },
+    {
+     "at": 50.85,
+     "line": 6,
+     "align": 0.4,
+     "dur": 0.4
+    },
+    {
+     "at": 51.55,
+     "line": 20,
+     "align": 0.98,
+     "dur": 0.4
+    }
+   ]
+  },
+  {
+   "id": "mago1930",
+   "from": "mago",
+   "time": "19:30",
+   "typing": 52.9,
+   "at": 53.3,
+   "lines": [
+    "**Relatório do Mago** · qui 08/10",
+    "",
+    "**Ainda hoje**",
+    "==Nada vence hoje.==",
+    "",
+    "**Até dom 11/10**",
+    "__sex 09/10__",
+    "• 23:59 · CRM na prática: da informação à decisão //(Sistemas Integrados de Gestão)//"
+   ],
+   "marks": [
+    53.6
+   ]
+  }
+ ],
+ "nudges": [
+  {
+   "from": 34.95,
+   "to": 36.3,
+   "dy": 150
+  },
+  {
+   "from": 41.2,
+   "to": 43.75,
+   "dy": 120
+  }
+ ]
+}
