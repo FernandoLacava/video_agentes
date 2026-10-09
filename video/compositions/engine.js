@@ -61,6 +61,7 @@
   let markCounter = 0;
   function inline(text) {
     let s = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    s = s.replace(/%%(.+?)%%/g, (_, x) => `<span class="mark hot" data-hot>${x}</span>`);
     s = s.replace(/==(.+?)==/g, (_, x) => `<span class="mark" data-mark>${x}</span>`);
     s = s.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
     s = s.replace(/\/\/(.+?)\/\//g, '<i>$1</i>');

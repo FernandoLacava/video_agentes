@@ -108,6 +108,13 @@
       proof.appendChild(im);
       frameImgs[i] = im;
     });
+    (P.cover || []).forEach((y) => {
+      const c = el('div', 'pcover');
+      P._covers = P._covers || [];
+      P._covers.push(c);
+      c.style.top = ((y / 2346) * 956 - 8).toFixed(1) + 'px';
+      proof.appendChild(c);
+    });
     const cover = statusBar();
     cover.classList.add('cover');
     proof.appendChild(cover);
@@ -157,7 +164,7 @@
       if (t < L.in || t >= end) { g.style.visibility = 'hidden'; return; }
       lockAny = true;
       g.style.visibility = 'visible';
-      const pin = i === 0 ? 1 : ease.out(prog(t, L.in, 0.3));
+      const pin = i === 0 ? 1 : ease.out(prog(t, L.in, 0.15));
       const [x0, y0, x1, y1] = L.rect;
       const cx = ((x0 + x1) / 2) * PX, cy = ((y0 + y1) / 2) * PX;
       const dp = ease.inOut(prog(t, L.dive, 0.45));
@@ -214,6 +221,7 @@
       const showHome = t < PR.home.until;
       P.home.style.visibility = showHome ? 'visible' : 'hidden';
       for (const k in P.frameImgs) P.frameImgs[k].style.visibility = !showHome && +k === frame ? 'visible' : 'hidden';
+      P.proof.querySelectorAll('.pcover').forEach((c) => (c.style.visibility = !showHome && frame === 20 ? 'visible' : 'hidden'));
       if (!P._cov) { setStatus(P.cover, PR.statusCover.time, PR.statusCover.batt); P._cov = 1; }
     } else P.proof.style.visibility = 'hidden';
 

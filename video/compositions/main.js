@@ -12,8 +12,8 @@
       states: {
         lock:  { cx: 540, top: 318, s: 0.72, o: 1 },
         chat:  { cx: 540, top: 286, s: 1.0,  o: 1 },
-        panel: { cx: 730, top: 300, s: 0.86, o: 1 },
-        proof: { cx: 452, top: 290, s: 0.9,  o: 1 },
+        panel: { cx: 724, top: 300, s: 0.84, o: 1 },
+        proof: { cx: 470, top: 296, s: 0.86, o: 1 },
         out:   { cx: 540, top: 1500, s: 0.72, o: 0 },
       },
       cap: { top: 66 }, side: { top: 300 }, hookRow: 590, end: { top: 480 },
@@ -24,10 +24,10 @@
         lock:  { cx: 540, top: 470, s: 0.76, o: 1 },
         chat:  { cx: 540, top: 430, s: 1.0,  o: 1 },
         panel: { cx: 716, top: 450, s: 0.78, o: 1 },
-        proof: { cx: 452, top: 450, s: 0.84, o: 1 },
+        proof: { cx: 460, top: 450, s: 0.86, o: 1 },
         out:   { cx: 540, top: 2100, s: 0.76, o: 0 },
       },
-      cap: { top: 150 }, side: { top: 470 }, hookRow: 800, end: { top: 700 },
+      cap: { top: 150 }, side: { top: 470 }, hookRow: 820, end: { top: 820 },
     },
   };
   const LY = LAYOUTS[FMT];
@@ -60,6 +60,7 @@
     const Q = QG.overlay.buildQuests(root, data);
     const R = QG.overlay.buildRouting(root, data);
     const Lb = QG.overlay.buildLabels(root, data);
+    const In = QG.overlay.buildInset(root);
     const E = QG.overlay.buildEnd(root, data);
 
     await document.fonts.ready;
@@ -113,7 +114,7 @@
         py = lerp(py, fy, w);
         if (pu.fx != null) px = lerp(px, g.cx + (pu.fx - 0.5) * QG.phone.SW * k, w);
       }
-      capScrim.style.opacity = clamp(wmax).toFixed(3);
+      capScrim.style.opacity = '1';
       cam.style.transform = `translate(${px.toFixed(1)}px, ${py.toFixed(1)}px) scale(${z.toFixed(5)}) translate(${(-px).toFixed(1)}px, ${(-py).toFixed(1)}px)`;
 
       let nudge = 0;
@@ -135,6 +136,7 @@
       QG.overlay.renderRouting(R, data, t);
       QG.overlay.renderLabels(Lb, data, t, { top: g.top, k, left: g.cx - (QG.phone.SW / 2) * k, right: g.cx + (QG.phone.SW / 2) * k, W: LY.W });
       QG.overlay.renderEnd(E, data, t);
+      QG.overlay.renderInset(In, data, t);
     }
 
     // Sound cues, derived from the same data the picture uses.

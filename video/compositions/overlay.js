@@ -113,9 +113,11 @@
     Q.q.style.opacity = vis.toFixed(3);
     Q.q.style.transform = `translateX(${(-40 * (1 - vis)).toFixed(1)}px)`;
     Q.q.classList.toggle('blink', blink === 1);
+    if (blink) Q.q.style.transform += ` scale(${blink === 1 ? 1.035 : 1})`;
     for (const id in Q.rows) {
       const r = Q.rows[id], s = states[id];
-      if (!s) { r.style.opacity = 0; continue; }
+      if (!s) { r.style.display = 'none'; continue; }
+      r.style.display = '';
       const p = prog(t, setAt[id], 0.25);
       r.style.opacity = (s === 'cancel' ? lerp(1, 0.55, p) : clamp(p * 3)).toFixed(3);
       r.dataset.state = s;
@@ -216,7 +218,7 @@
       const yScreen = (l.y / 2346) * 956; // pt
       const y = geo.top + yScreen * geo.k;
       n.style.top = (y - 24).toFixed(1) + 'px';
-      n.style.right = (geo.W - geo.right + 12).toFixed(1) + 'px';
+      n.style.left = (geo.right + 22).toFixed(1) + 'px';
       n.style.opacity = (clamp(p * 3) * oo).toFixed(3);
       n.style.transform = `translateX(${((1 - ease.back(p)) * 30).toFixed(1)}px)`;
     });
@@ -229,6 +231,24 @@
       n.style.opacity = (clamp(p * 3) * go).toFixed(3);
       n.style.transform = `translate(-50%, -50%) scale(${lerp(0.5, 1, ease.back(p)).toFixed(3)})`;
     });
+  }
+
+  // ---------- Sewgu inset: the typo, next to the agent calling it out ----------
+  function buildInset(root) {
+    const n = el('div', 'inset');
+    n.innerHTML = `<div class="in-h">você escreveu:</div><div class="in-b">Sewgu<span class="in-t">17:55</span></div><div class="in-arrow"></div>`;
+    root.appendChild(n);
+    return n;
+  }
+  function renderInset(n, data, t) {
+    const m = data.messages.find((x) => x.hot != null);
+    const nd = (data.nudges || [])[1];
+    const from = m.hot - 0.15, to = nd ? nd.to - 0.3 : m.hot + 2;
+    if (t < from || t > to + 0.25) { n.style.visibility = 'hidden'; return; }
+    n.style.visibility = 'visible';
+    const p = prog(t, from, 0.32), o = 1 - ease.in(prog(t, to, 0.25));
+    n.style.opacity = (clamp(p * 3) * o).toFixed(3);
+    n.style.transform = `translateY(${((1 - ease.back(p)) * -30).toFixed(1)}px) rotate(${lerp(-5, -2, ease.out(p)).toFixed(2)}deg)`;
   }
 
   // ---------- end card ----------
@@ -268,6 +288,6 @@
 
   window.QG.overlay = {
     buildCaptions, renderCaptions, buildHook, renderHook, buildQuests, renderQuests,
-    buildRouting, renderRouting, buildLabels, renderLabels, buildEnd, renderEnd,
+    buildRouting, renderRouting, buildInset, renderInset, buildLabels, renderLabels, buildEnd, renderEnd,
   };
 })();

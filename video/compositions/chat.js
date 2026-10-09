@@ -31,6 +31,19 @@
       ctx.seed += 17;
       return wrap;
     }
+    if (raw.startsWith('!blur:')) {
+      // pasted wall of text, unreadable on purpose (privacy): generic filler under blur
+      const n = +raw.slice(6);
+      const box = el('div', 'blurtext');
+      for (let i = 0; i < n; i++) {
+        const w = i === n - 1 ? 40 + hash(ctx.seed + i) * 45 : 90 + hash(ctx.seed + i * 3) * 10;
+        const ln = el('div', 'bl', CODE_FILLER[(i * 3 + ctx.seed) % CODE_FILLER.length] || 'texto colado da comanda do dia');
+        ln.style.width = w.toFixed(1) + '%';
+        box.appendChild(ln);
+      }
+      ctx.seed += 11;
+      return box;
+    }
     if (raw.startsWith('!code:')) {
       const n = +raw.slice(6);
       const box = el('div', 'code');
@@ -98,7 +111,8 @@
       }
       content.appendChild(row);
       const marks = Array.from(bub.querySelectorAll('[data-mark]'));
-      msgs.push({ m, row, bub, av, lines, marks, recv, idx, pre });
+      const hots = Array.from(bub.querySelectorAll('[data-hot]'));
+      msgs.push({ m, row, bub, av, lines, marks, hots, recv, idx, pre });
       prevFrom = m.from;
     });
     content.appendChild(el('div', 'chat-tail'));
@@ -210,6 +224,10 @@
       if (!g.recv) {
         const sy = g.top + g.bub.offsetTop - scroll;
         g.bub.style.backgroundPosition = `0 ${(-sy).toFixed(1)}px`;
+      }
+      if (m.hot != null) {
+        const hp = ease.out(prog(t, m.hot, 0.45));
+        g.hots.forEach((h) => h.style.setProperty('--p', hp.toFixed(3)));
       }
       // highlight sweeps
       if (m.marks) {
