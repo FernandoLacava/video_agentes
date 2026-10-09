@@ -8,3 +8,5 @@ video/out/cues.json
 video/out/draft*
 video/out/contact_*
 video/snapshots/
+video/out/build*.log
+video/out/linkedin-*.mp4.part
