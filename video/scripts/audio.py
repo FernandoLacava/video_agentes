@@ -268,7 +268,7 @@ def main():
         if name not in cache:
             cache[name] = SFX[name]()
         s = cache[name]
-        k = int(c['at'] * SR)
+        k = int(max(0.0, c['at']) * SR)
         e = min(len(fx), k + len(s))
         fx[k:e] += s[: e - k]
     fx = fx[:n]
