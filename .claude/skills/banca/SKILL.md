@@ -1,6 +1,6 @@
 ---
 name: banca
-description: Banca de 5 revisores que tenta reprovar o código antes de subir (hacker, usuário confuso, programador sênior, testador e chefe dos desenvolvedores, que dá o veredito). Use quando a pessoa pedir "/banca", "banca de revisores", "revisa antes de subir", "tenta reprovar meu código" ou quiser um veredito APROVADO/REPROVADO antes de um deploy ou push.
+description: Banca de 5 revisores que tenta reprovar o código antes de subir (hacker, usuário confuso, programador sênior, testador e chefe dos desenvolvedores, que dá o veredito APROVADO/REPROVADO). Use AUTOMATICAMENTE antes de todo commit/push/deploy de mudanças de código feitas na sessão, e também quando a pessoa pedir revisão, "revisa antes de subir" ou "tenta reprovar meu código".
 argument-hint: "[o que esse código faz, em uma frase] [arquivos ou pasta, opcional]"
 ---
 
