@@ -21,10 +21,12 @@
         "hooks": [
           {
             "type": "command",
-            "command": "[ -d \"$HOME/.claude/plugins/cache/claudemonstro\" ] || echo 'AVISO PARA O CLAUDE: o Claude monstro NAO esta instalado nesta sessao (sem skills, regras, Context7 e 21st). Avise a pessoa logo na primeira resposta e peca para colar o conteudo de https://github.com/FernandoLacava/claudemonstro/blob/main/setup.sh no Setup script do ambiente (nome do ambiente no topo da sessao -> Edit) e abrir uma sessao nova.'"
+            "command": "D=\"$HOME/.claude/claudemonstro-src\"; if [ -d \"$D/.git\" ]; then timeout 60 git -C \"$D\" pull -q --ff-only; else timeout 90 git clone -q --depth 1 https://github.com/FernandoLacava/claudemonstro \"$D\"; fi >/dev/null 2>&1; if [ -f \"$D/bootstrap.sh\" ]; then bash \"$D/bootstrap.sh\"; else echo \"AVISO PARA O CLAUDE: nao foi possivel baixar o Claude monstro (github.com/FernandoLacava/claudemonstro). Avise a pessoa na primeira resposta.\"; fi",
+            "timeout": 240
           }
         ]
       }
     ]
-  }
+  },
+  "enableAllProjectMcpServers": true
 }
