@@ -1,7 +1,30 @@
 {
   "extraKnownMarketplaces": {
-    "claudemonstro": { "source": { "source": "github", "repo": "FernandoLacava/claudemonstro" } }
+    "claudemonstro": {
+      "source": {
+        "source": "github",
+        "repo": "FernandoLacava/claudemonstro"
+      }
+    }
   },
-  "enabledPlugins": { "monstro@claudemonstro": true },
-  "statusLine": { "type": "command", "command": "node ~/.claude/claudemonstro-statusline.js", "padding": 0 }
+  "enabledPlugins": {
+    "monstro@claudemonstro": true
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "node ~/.claude/claudemonstro-statusline.js",
+    "padding": 0
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -d \"$HOME/.claude/plugins/cache/claudemonstro\" ] || echo 'AVISO PARA O CLAUDE: o Claude monstro NAO esta instalado nesta sessao (sem skills, regras, Context7 e 21st). Avise a pessoa logo na primeira resposta e peca para colar o conteudo de https://github.com/FernandoLacava/claudemonstro/blob/main/setup.sh no Setup script do ambiente (nome do ambiente no topo da sessao -> Edit) e abrir uma sessao nova.'"
+          }
+        ]
+      }
+    ]
+  }
 }
